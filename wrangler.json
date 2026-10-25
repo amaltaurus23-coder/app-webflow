@@ -1,5 +1,11 @@
 {
-  "name": "app-webflow",
-  "compatibility_date": "2025-08-16",
-  "pages_build_output_dir": ".vercel/output/static"
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "amaltaurus-app",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-08-31",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
 }
