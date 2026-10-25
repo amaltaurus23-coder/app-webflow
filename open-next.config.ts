@@ -1,3 +1,10 @@
-import { defineConfig } from "@opennextjs/aws";
+const config = {
+  default: {
+    override: {
+      wrapper: "cloudflare",
+      converter: "edge",
+    },
+  },
+};
 
-export default defineConfig({});
+export default config;
