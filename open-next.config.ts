@@ -1,7 +1,8 @@
 export default {
   default: {
     override: {
-      converter: "edge",
+      wrapper: "aws-lambda",
+      converter: "aws-cloudfront",
       proxyExternalRequest: "fetch",
       incrementalCache: "dummy",
       tagCache: "dummy",
@@ -12,7 +13,8 @@ export default {
   middleware: {
     external: true,
     override: {
-      converter: "edge",
+      wrapper: "aws-lambda",
+      converter: "aws-cloudfront",
       proxyExternalRequest: "fetch",
       incrementalCache: "dummy",
       tagCache: "dummy",
