@@ -1,6 +1,6 @@
-/** @type {import('next').nextconfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  // runtime = edge mat likho
+};
 
-module.exports = nextConfig
+export default nextConfig;
